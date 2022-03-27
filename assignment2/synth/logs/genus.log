@@ -1,0 +1,1262 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.12-s121_1, built Tue Dec 03 01:37:17 PST 2019
+Options: -legacy_ui -files ../scripts/genus_script.tcl 
+Date:    Tue Feb 01 22:11:37 2022
+Host:    dirac1 (x86_64 w/Linux 4.9.0-4-amd64) (1core*24cpus*1physical cpu*Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz 20480KB) (48955892KB)
+PID:     1062
+OS:      Unsupported OS as /etc does not have release info
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (18 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source ../scripts/genus_script.tcl
+  Setting attribute of root '/': 'lib_search_path' = /afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/libs/
+  Setting attribute of root '/': 'init_hdl_search_path' = /afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/
+
+Threads Configured:3
+
+  Message Summary for Library uk65lscllmvbbr_100c25_tc_ccs.lib:
+  *************************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *************************************************************
+ 
+Warning : Ignoring unsupported lu_table_template. [LBR-403]
+        : Ignoring lu_table_template index type (input_voltage).
+        : LBR-403 is issued when an unsupported lu_table_template is encountered by GENUS.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.000000, 25.000000) in library 'uk65lscllmvbbr_100c25_tc_ccs.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP32R' must have an output pin.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM12R'
+        : To make the cell usable, change the value of 'dont_use' attribute to false.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM16R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM20R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM2R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM3R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM4R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM6R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM8R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM12R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM16R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM20R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM2R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM3R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM4R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM6R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM8R'
+  Setting attribute of root '/': 'library' = uk65lscllmvbbr_100c25_tc_ccs.lib
+  Setting attribute of root '/': 'information_level' = 6
+            Reading Verilog file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/fifo.v'
+            Reading Verilog file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/fifomem.v'
+            Reading Verilog file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/rptr_empty.v'
+            Reading Verilog file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/sync_r2w.v'
+            Reading Verilog file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/sync_w2r.v'
+            Reading Verilog file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/wptr_full.v'
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'C' and 'CO' in libcell 'AD42M2RA'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'C' and 'CO' in libcell 'AD42M2RA' is 'neg_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'C' and 'CO' in libcell 'AD42M2RA' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'CO' in libcell 'AD42M2RA'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'CO' in libcell 'AD42M2RA' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'CO' in libcell 'AD42M2RA' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'CO' in libcell 'AD42M2RA'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'CO' in libcell 'AD42M2RA' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'CO' in libcell 'AD42M2RA' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'ICI' and 'S' in libcell 'AD42M2RA'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'ICI' and 'S' in libcell 'AD42M2RA' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'ICI' and 'S' in libcell 'AD42M2RA' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'D' and 'S' in libcell 'AD42M2RA'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'S' in libcell 'AD42M2RA' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'S' in libcell 'AD42M2RA' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'C' and 'S' in libcell 'AD42M2RA'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'AD42M2RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'AD42M2RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'C' and 'CO' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'CO' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'CO' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'ICI' and 'S' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'D' and 'S' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'C' and 'S' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'AD42M4RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'NCI' and 'S' in libcell 'ADFCM2RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADFCM2RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADFCM2RA'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'NCI' and 'S' in libcell 'ADFCM4RA'.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM12RA' is a sequential timing arc.
+        : The library cell will be treated as a timing-model. Make sure that the timing arcs and output function are defined correctly. Even if the cell intends to have dual-functionality, it cannot be unmapped or automatically inferred.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM16RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM24RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM2RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM32RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM40RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM48RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM4RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM6RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM8RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM12R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM16R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM20R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM2R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM3R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM4R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM6R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM8R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEPM12R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEPM16R' is a sequential timing arc.
+          INLINE_INFO: Skipping marking small hierarchies inline as the variable 'hdl_dissolve_primitive_instance_hierarchy_threshold' has not been set to a positive value.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'fifo' from file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/fifo.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'fifo' with default parameters value.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'sync_r2w' from file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/sync_r2w.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'sync_w2r' from file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/sync_w2r.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'fifomem_DATASIZE8_ADDRSIZE4' from file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/fifomem.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'fifomem_DATASIZE8_ADDRSIZE4' in file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/fifomem.v' on line 14.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'rptr_empty_ADDRSIZE4' from file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/rptr_empty.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'wptr_full_ADDRSIZE4' from file '/afs/iitd.ac.in/user/j/jv/jvl202215/elp736/assignments/assignment1/SYNTH/rtl/wptr_full.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'fifo'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+        Applying wireload models.
+        Computing net loads.
+Warning : Unsupported SDC command option. [SDC-201] [set_input_delay]
+        : The 'set_input_delay' command on line '72' in the SDC file '../sdc/fifo.sdc' is not supported on ports which have a clock already defined '/designs/fifo/ports_in/rclk'.
+        : The current version does not support this SDC command option.  However, future versions may be enhanced to support this option.
+Warning : Unsupported SDC command option. [SDC-201] [set_input_delay]
+        : The 'set_input_delay' command on line '74' in the SDC file '../sdc/fifo.sdc' is not supported on ports which have a clock already defined '/designs/fifo/ports_in/wclk'.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '97' of the SDC file '../sdc/fifo.sdc': missing close-bracket.
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      2 , failed      0 (runtime  0.00)
+ "current_design"           - successful      2 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful     31 , failed      0 (runtime  0.00)
+ "get_ports"                - successful     52 , failed      0 (runtime  0.00)
+ "set_clock_groups"         - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_latency"        - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_transition"     - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      2 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful     14 , failed      0 (runtime  0.00)
+ "set_max_capacitance"      - successful      3 , failed      0 (runtime  0.00)
+ "set_max_transition"       - successful     24 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful     10 , failed      0 (runtime  0.00)
+ "set_units"                - successful      2 , failed      0 (runtime  0.00)
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0.0
+
+
+ 	 Check Design Report (c)
+	 ------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'fifo'
+
+No empty modules in design 'fifo'
+
+  Done Checking the design.
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : command: 'synthesize'
+        : The synthesize command is obsolete. Use the syn_gen, syn_map or syn_opt commands instead.
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'fifo' to generic gates using 'medium' effort.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 10 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'rptr_empty/mux_rbin_20_9', 'rptr_empty/mux_rempty_37_9', 
+'rptr_empty/mux_rptr_20_9', 'sync_r2w/mux_wq1_rptr_13_9', 
+'sync_r2w/mux_wq2_rptr_13_9', 'sync_w2r/mux_rq1_wptr_13_9', 
+'sync_w2r/mux_rq2_wptr_13_9', 'wptr_full/mux_wbin_17_9', 
+'wptr_full/mux_wfull_37_9', 'wptr_full/mux_wptr_17_9'.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
+Info    : Equivalent sequential instances have been merged. [GLO-42]
+        : Instances 'rptr_reg[4]' and 'rbin_reg[4]' in 'rptr_empty_ADDRSIZE4' have been merged.
+        : To prevent merging of sequential instances, set the 'optimize_merge_flops' and 'optimize_merge_latches' root attributes to 'false' or the 'optimize_merge_seq' instance attribute to 'false'.
+Info    : Equivalent sequential instances have been merged. [GLO-42]
+        : Instances 'wptr_reg[4]' and 'wbin_reg[4]' in 'wptr_full_ADDRSIZE4' have been merged.
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: fifo, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: fifo, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Info    : Deleting sequential instances not driving any primary outputs. [GLO-32]
+        : Deleting 2 sequential instances. 
+Following instances are deleted as they do not drive any primary output:
+'rptr_empty/rbin_reg[4]', 'wptr_full/wbin_reg[4]'.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of deleted sequential, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list.
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : No pre-processing optimizations applied to datapath logic in 'fifo'.
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'fifo'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_26'
+      Timing increment_unsigned...
+      Timing increment_unsigned_3...
+      Timing increment_unsigned_7...
+      Timing increment_unsigned_11...
+      Timing increment_unsigned_15...
+      Timing increment_unsigned_19...
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 5 for module 'CDN_DP_region_26'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region'
+      Timing increment_unsigned_23...
+      Timing increment_unsigned_27...
+      Timing increment_unsigned_31...
+      Timing increment_unsigned_35...
+      Timing increment_unsigned_39...
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 5 for module 'CDN_DP_region'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Done optimizing datapath logic. [DPOPT-2]
+        : Done optimizing datapath logic in 'fifo'.
+Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: fifo, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+      Removing temporary intermediate hierarchies under fifo
+Starting mux speculation [v1.0] (stage: post_muxopt, startdef: fifo, recur: true)
+Starting speculation optimization
+Completed speculation optimization (accepts:0)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.104s)
+==================================
+Stage : to_generic 
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|    Id    |  Sev   |Count |                                                                                  Message Text                                                                                   |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| CDFG-250 |Info    |    1 |Processing multi-dimensional arrays.                                                                                                                                             |
+| CDFG-372 |Info    |    4 |Bitwidth mismatch in assignment.                                                                                                                                                 |
+|          |        |      |Review and make sure the mismatch is unintentional. Genus can possibly issue bitwidth mismatch warning for explicit assignments present in RTL as-well-as for implicit           |
+|          |        |      | assignments inferred by the tool. For example, in case of enum declaration without value, the tool will implicitly assign value to the enum variables. It also issues the       |
+|          |        |      | warning for any bitwidth mismatch that appears in this implicit assignment.                                                                                                     |
+| CDFG-818 |Warning |    1 |Using default parameter value for module elaboration.                                                                                                                            |
+| CWD-19   |Info    |   14 |An implementation was inferred.                                                                                                                                                  |
+| DPOPT-1  |Info    |    1 |Optimizing datapath logic.                                                                                                                                                       |
+| DPOPT-2  |Info    |    1 |Done optimizing datapath logic.                                                                                                                                                  |
+| DPOPT-3  |Info    |    2 |Implementing datapath configurations.                                                                                                                                            |
+| DPOPT-4  |Info    |    2 |Done implementing datapath configurations.                                                                                                                                       |
+| DPOPT-6  |Info    |    1 |Pre-processed datapath logic.                                                                                                                                                    |
+| ELAB-1   |Info    |    1 |Elaborating Design.                                                                                                                                                              |
+| ELAB-2   |Info    |    5 |Elaborating Subdesign.                                                                                                                                                           |
+| ELAB-3   |Info    |    1 |Done Elaborating Design.                                                                                                                                                         |
+| GLO-32   |Info    |    1 |Deleting sequential instances not driving any primary outputs.                                                                                                                   |
+|          |        |      |Optimizations such as constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of      |
+|          |        |      | deleted sequential, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list.    |
+| GLO-34   |Info    |    1 |Deleting instances not driving any primary outputs.                                                                                                                              |
+|          |        |      |Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the  |
+|          |        |      | list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see   |
+|          |        |      | the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.                |
+| GLO-42   |Info    |    2 |Equivalent sequential instances have been merged.                                                                                                                                |
+|          |        |      |To prevent merging of sequential instances, set the 'optimize_merge_flops' and 'optimize_merge_latches' root attributes to 'false' or the 'optimize_merge_seq' instance          |
+|          |        |      | attribute to 'false'.                                                                                                                                                           |
+| LBR-101  |Warning |   16 |Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as                               |
+|          |        |      | 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use'          |
+|          |        |      | attribute should be set to false.                                                                                                                                               |
+|          |        |      |To make the cell usable, change the value of 'dont_use' attribute to false.                                                                                                      |
+| LBR-155  |Info    |  593 |Mismatch in unateness between 'timing_sense' attribute and the function.                                                                                                         |
+|          |        |      |The 'timing_sense' attribute will be respected.                                                                                                                                  |
+| LBR-161  |Info    |    1 |Setting the maximum print count of this message to 10 if information_level is less than 9.                                                                                       |
+| LBR-162  |Info    |  291 |Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed.                                                                                                          |
+|          |        |      |Setting the 'timing_sense' to non_unate.                                                                                                                                         |
+| LBR-40   |Info    |    1 |An unsupported construct was detected in this library.                                                                                                                           |
+|          |        |      |Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.                                                                |
+| LBR-403  |Warning |    1 |Ignoring unsupported lu_table_template.                                                                                                                                          |
+|          |        |      |LBR-403 is issued when an unsupported lu_table_template is encountered by GENUS.                                                                                                 |
+| LBR-41   |Info    |    1 |An output library pin lacks a function attribute.                                                                                                                                |
+|          |        |      |If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.      |
+| LBR-412  |Info    |    1 |Created nominal operating condition.                                                                                                                                             |
+|          |        |      |The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively)  |
+|          |        |      | , or by the default PVT values (1.0,1.0,1.0).                                                                                                                                   |
+| LBR-518  |Info    |    1 |Missing a function attribute in the output pin definition.                                                                                                                       |
+| LBR-76   |Warning |   52 |Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as     |
+|          |        |      | unusable.                                                                                                                                                                       |
+|          |        |      |The library cell will be treated as a timing-model. Make sure that the timing arcs and output function are defined correctly. Even if the cell intends to have                   |
+|          |        |      | dual-functionality, it cannot be unmapped or automatically inferred.                                                                                                            |
+| LBR-9    |Warning |   24 |Library cell has no output pins defined.                                                                                                                                         |
+|          |        |      |Add the missing output pin(s)                                                                                                                                                    |
+|          |        |      | , then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is |
+|          |        |      | no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and   |
+|          |        |      | it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note:   |
+|          |        |      | The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin)              |
+|          |        |      | of the cell, to use it for mapping. The pg_pin will not have any function defined.                                                                                              |
+| SDC-201  |Warning |    2 |Unsupported SDC command option.                                                                                                                                                  |
+|          |        |      |The current version does not support this SDC command option.  However, future versions may be enhanced to support this option.                                                  |
+| SDC-202  |Error   |    1 |Could not interpret SDC command.                                                                                                                                                 |
+|          |        |      |The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.             |
+| SDC-209  |Warning |    1 |One or more commands failed when these constraints were applied.                                                                                                                 |
+|          |        |      |You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.                                                              |
+| SYNTH-1  |Info    |    1 |Synthesizing.                                                                                                                                                                    |
+| TUI-31   |Warning |    2 |Obsolete command.                                                                                                                                                                |
+|          |        |      |This command is no longer supported.                                                                                                                                             |
+| TUI-37   |Warning |    1 |This command will be obsolete in a next major release.                                                                                                                           |
+|          |        |      |The synthesize command is obsolete. Use the syn_gen, syn_map or syn_opt commands instead.                                                                                        |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'fifo' to generic gates.
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'fifo' using 'medium' effort.
+Mapper: Libraries have:
+	domain _default_: 600 combo usable cells and 338 sequential usable cells
+      Mapping 'fifo'...
+        Preparing the circuit
+          Pruning unused logic
+Multi-threaded constant propagation [1|0] ...
+          Analyzing hierarchical boundaries
+          Aggressive hierarchical optimization: disabled
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) fifo...
+          Done structuring (delay-based) fifo
+Multi-threaded Virtual Mapping    (8 threads, 8 of 24 CPUs usable)
+          Structuring (delay-based) logic partition in wptr_full_ADDRSIZE4...
+            Starting partial collapsing (xors only) cb_oseq_33
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in wptr_full_ADDRSIZE4
+        Mapping logic partition in wptr_full_ADDRSIZE4...
+          Structuring (delay-based) logic partition in rptr_empty_ADDRSIZE4...
+            Starting partial collapsing (xors only) cb_oseq_31
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in rptr_empty_ADDRSIZE4
+        Mapping logic partition in rptr_empty_ADDRSIZE4...
+          Structuring (delay-based) sync_w2r...
+          Done structuring (delay-based) sync_w2r
+        Mapping component sync_w2r...
+          Structuring (delay-based) sync_r2w...
+          Done structuring (delay-based) sync_r2w
+        Mapping component sync_r2w...
+          Structuring (delay-based) logic partition in wptr_full_ADDRSIZE4...
+            Starting partial collapsing (xors only) cb_seq_32
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in wptr_full_ADDRSIZE4
+        Mapping logic partition in wptr_full_ADDRSIZE4...
+          Structuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4
+        Mapping logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+          Structuring (delay-based) logic partition in rptr_empty_ADDRSIZE4...
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in rptr_empty_ADDRSIZE4
+        Mapping logic partition in rptr_empty_ADDRSIZE4...
+          Structuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4
+        Mapping logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+==================================
+Stage : first_condense 
+==================================
+  =================
+   Message Summary
+  =================
+------------------------------------------------------------------
+|   Id    |Sev  |Count |              Message Text               |
+------------------------------------------------------------------
+| GB-6    |Info |    2 |A datapath component has been ungrouped. |
+| SYNTH-2 |Info |    1 |Done synthesizing.                       |
+| SYNTH-4 |Info |    1 |Mapping.                                 |
+------------------------------------------------------------------
+ 
+Global mapping target info
+==========================
+Cost Group 'rclk' target slack:   101 ps
+Target path end-point (Pin: rptr_empty/rempty_reg/d)
+
+       Pin                   Type          Fanout Load Arrival   
+                                                  (fF)   (ps)    
+-----------------------------------------------------------------
+(clock rclk)       <<<  launch                               0 R 
+                        latency                                  
+rptr_empty
+  cb_seqi
+    rempty_reg/clk                                               
+    rempty_reg/q   (u)  unmapped_d_flop         2  3.1           
+  cb_seqi/rempty 
+  cb_oseqi/cb_seqi_rempty 
+    g88/in_1                                                     
+    g88/z          (u)  unmapped_complex2       3  8.7           
+    g83/in_1                                                     
+    g83/z          (u)  unmapped_complex2       3  8.7           
+    g79/in_0                                                     
+    g79/z          (u)  unmapped_complex2       4 11.6           
+    g78/in_0                                                     
+    g78/z          (u)  unmapped_complex2       2  5.8           
+    g66/in_0                                                     
+    g66/z          (u)  unmapped_or2            1  2.9           
+    g67/in_1                                                     
+    g67/z          (u)  unmapped_nand2          5 14.5           
+    g60/in_1                                                     
+    g60/z          (u)  unmapped_complex2       1  2.9           
+    g61/in_1                                                     
+    g61/z          (u)  unmapped_nand2          3  8.7           
+  cb_oseqi/cb_seqi_g14_z 
+  cb_seqi/g14_z 
+    g78/in_0                                                     
+    g78/z          (u)  unmapped_or2            1  2.9           
+    g79/in_1                                                     
+    g79/z          (u)  unmapped_nand2          1  2.9           
+    g75/in_1                                                     
+    g75/z          (u)  unmapped_complex2       1  2.9           
+    g74/in_1                                                     
+    g74/z          (u)  unmapped_complex2       1  2.9           
+    g58/in_0                                                     
+    g58/z          (u)  unmapped_or2            1  2.9           
+    g91/in_1                                                     
+    g91/z          (u)  unmapped_complex2       1  2.9           
+    rempty_reg/d   <<<  unmapped_d_flop                          
+    rempty_reg/clk      setup                                    
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock rclk)            capture                           3333 R 
+                        latency                                  
+-----------------------------------------------------------------
+Cost Group   : 'rclk' (path_group 'rclk')
+Start-point  : rptr_empty/cb_seqi/rempty_reg/clk
+End-point    : rptr_empty/cb_seqi/rempty_reg/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 2000ps.
+ 
+Cost Group 'wclk' target slack:   295 ps
+Target path end-point (Pin: wptr_full/wfull_reg/d)
+
+      Pin                   Type          Fanout Load Arrival   
+                                                 (fF)   (ps)    
+----------------------------------------------------------------
+(clock wclk)      <<<  launch                               0 R 
+                       latency                                  
+wptr_full
+  cb_seqi
+    wfull_reg/clk                                               
+    wfull_reg/q   (u)  unmapped_d_flop         6 14.7           
+  cb_seqi/wfull 
+  cb_oseqi/cb_seqi_wfull 
+    g84/in_1                                                    
+    g84/z         (u)  unmapped_complex2       3  8.7           
+    g80/in_1                                                    
+    g80/z         (u)  unmapped_complex2       3  8.7           
+    g76/in_0                                                    
+    g76/z         (u)  unmapped_complex2       3  8.7           
+    g69/in_1                                                    
+    g69/z         (u)  unmapped_complex2       3  8.7           
+    g51/in_0                                                    
+    g51/z         (u)  unmapped_complex2       2  5.8           
+    g61/in_0                                                    
+    g61/z         (u)  unmapped_or2            1  2.9           
+    g62/in_1                                                    
+    g62/z         (u)  unmapped_nand2          5 14.5           
+    g55/in_0                                                    
+    g55/z         (u)  unmapped_complex2       1  2.9           
+    g56/in_1                                                    
+    g56/z         (u)  unmapped_nand2          3  8.7           
+  cb_oseqi/cb_seqi_g15_z 
+  cb_seqi/g15_z 
+    g97/in_0                                                    
+    g97/z         (u)  unmapped_complex2       1  2.9           
+    g98/in_1                                                    
+    g98/z         (u)  unmapped_nand2          1  2.9           
+    g84/in_1                                                    
+    g84/z         (u)  unmapped_nand2          1  2.9           
+    g83/in_0                                                    
+    g83/z         (u)  unmapped_or2            1  2.9           
+    g61/in_0                                                    
+    g61/z         (u)  unmapped_or2            1  2.9           
+    g100/in_1                                                   
+    g100/z        (u)  unmapped_complex2       1  2.9           
+    wfull_reg/d   <<<  unmapped_d_flop                          
+    wfull_reg/clk      setup                                    
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock wclk)           capture                          10000 R 
+                       latency                                  
+                       uncertainty                              
+----------------------------------------------------------------
+Cost Group   : 'wclk' (path_group 'wclk')
+Start-point  : wptr_full/cb_seqi/wfull_reg/clk
+End-point    : wptr_full/cb_seqi/wfull_reg/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 8442ps.
+ 
+Multi-threaded Technology Mapping (8 threads, 8 of 24 CPUs usable)
+          Restructuring (delay-based) logic partition in rptr_empty_ADDRSIZE4...
+          Done restructuring (delay-based) logic partition in rptr_empty_ADDRSIZE4
+        Optimizing logic partition in rptr_empty_ADDRSIZE4...
+          Restructuring (delay-based) logic partition in wptr_full_ADDRSIZE4...
+          Done restructuring (delay-based) logic partition in wptr_full_ADDRSIZE4
+        Optimizing logic partition in wptr_full_ADDRSIZE4...
+          Restructuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+          Done restructuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4
+        Optimizing logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+          Restructuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+          Done restructuring (delay-based) logic partition in fifomem_DATASIZE8_ADDRSIZE4
+        Optimizing logic partition in fifomem_DATASIZE8_ADDRSIZE4...
+          Restructuring (delay-based) sync_w2r...
+          Done restructuring (delay-based) sync_w2r
+        Optimizing component sync_w2r...
+          Restructuring (delay-based) sync_r2w...
+          Done restructuring (delay-based) sync_r2w
+        Optimizing component sync_r2w...
+          Restructuring (delay-based) logic partition in rptr_empty_ADDRSIZE4...
+          Done restructuring (delay-based) logic partition in rptr_empty_ADDRSIZE4
+        Optimizing logic partition in rptr_empty_ADDRSIZE4...
+          Restructuring (delay-based) logic partition in wptr_full_ADDRSIZE4...
+          Done restructuring (delay-based) logic partition in wptr_full_ADDRSIZE4
+        Optimizing logic partition in wptr_full_ADDRSIZE4...
+ 
+Global mapping timing result
+============================
+        Applying wireload models.
+        Computing net loads.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+      Pin               Type       Fanout Load Slew Delay Arrival   
+                                          (fF) (ps)  (ps)   (ps)    
+--------------------------------------------------------------------
+(clock wclk)          launch                                    0 R 
+                      latency                        +100     100 R 
+wptr_full
+  cb_seqi
+    wfull_reg/CK                                400           100 R 
+    wfull_reg/Q       DFQRM2RA          6  4.7   41  +290     390 F 
+  cb_seqi/wfull 
+  cb_oseqi/cb_seqi_wfull 
+    g154/NA                                            +0     390   
+    g154/Z            ND2B1M2R          3  2.8   54   +91     480 F 
+    g153/NA                                            +0     480   
+    g153/Z            ND2B1M2R          3  2.8   57   +97     577 F 
+    g151/NA                                            +0     577   
+    g151/Z            ND2B1M2R          3  2.8   57   +98     675 F 
+    g149/NA                                            +0     675   
+    g149/Z            ND2B1M2R          3  2.8   57   +98     773 F 
+    g145/NA                                            +0     773   
+    g145/Z            ND2B1M2R          2  2.0   49   +92     865 F 
+    g140/B1                                            +0     865   
+    g140/Z            MOAI22M2RA        3  4.8   89  +137    1002 F 
+    g138/A                                             +0    1002   
+    g138/Z            XOR2M2RA          3  3.8   48  +106    1108 F 
+  cb_oseqi/cb_seqi_g15_z 
+  cb_seqi/g15_z 
+    g175/A                                             +0    1108   
+    g175/Z            CKND2M2R          1  1.2   30   +37    1146 R 
+    g165/B                                             +0    1146   
+    g165/Z            OAI211M2R         1  1.2   56   +47    1193 F 
+    g164/D                                             +0    1193   
+    g164/Z            NR4M1R            1  1.3  119   +84    1277 R 
+    wfull_reg/D  <<<  DFQRM2RA                         +0    1277   
+    wfull_reg/CK      setup                     400    -7    1270 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock wclk)          capture                               10000 R 
+                      latency                        +100   10100 R 
+                      uncertainty                    -200    9900 R 
+--------------------------------------------------------------------
+Cost Group   : 'wclk' (path_group 'wclk')
+Timing slack :    8630ps 
+Start-point  : wptr_full/cb_seqi/wfull_reg/CK
+End-point    : wptr_full/cb_seqi/wfull_reg/D
+
+      Pin                Type      Fanout Load Slew Delay Arrival   
+                                          (fF) (ps)  (ps)   (ps)    
+--------------------------------------------------------------------
+(clock rclk)           launch                                   0 R 
+                       latency                       +100     100 R 
+rptr_empty
+  cb_seqi
+    rempty_reg/CK                               400           100 R 
+    rempty_reg/Q       DFQSM2RA         2  0.9   19  +281     381 F 
+  cb_seqi/rempty 
+  cb_oseqi/cb_seqi_rempty 
+    g161/NA                                            +0     381   
+    g161/Z             ND2B1M2R         3  2.8   54   +81     462 F 
+    g160/NA                                            +0     462   
+    g160/Z             ND2B1M2R         3  2.8   57   +97     559 F 
+    g158/NA                                            +0     559   
+    g158/Z             ND2B1M2R         3  2.8   56   +98     657 F 
+    g156/NA                                            +0     657   
+    g156/Z             ND2B1M2R         3  2.8   58   +98     754 F 
+    g152/NA                                            +0     754   
+    g152/Z             ND2B1M2R         2  2.0   49   +93     847 F 
+    g147/B1                                            +0     847   
+    g147/Z             MOAI22M2RA       4  5.2   94  +140     987 F 
+    g145/A                                             +0     987   
+    g145/Z             XOR2M2RA         2  3.0   50  +122    1109 R 
+  cb_oseqi/cb_seqi_g14_z 
+  cb_seqi/g14_z 
+    g159/A                                             +0    1109   
+    g159/Z             XOR2M2RA         1  1.2   33   +96    1205 F 
+    g155/D                                             +0    1205   
+    g155/Z             NR4M1R           1  1.3  119   +77    1282 R 
+    rempty_reg/D  <<<  DFQSM2RA                        +0    1282   
+    rempty_reg/CK      setup                    400    -3    1279 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock rclk)           capture                               3333 R 
+                       latency                       +100    3433 R 
+--------------------------------------------------------------------
+Cost Group   : 'rclk' (path_group 'rclk')
+Timing slack :    2154ps 
+Start-point  : rptr_empty/cb_seqi/rempty_reg/CK
+End-point    : rptr_empty/cb_seqi/rempty_reg/D
+
+ 
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_map                 1903        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+          rclk               101     2154              3333 
+          wclk               295     8630             10000 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'rclk' target slack:    67 ps
+Target path end-point (Pin: rptr_empty/rempty_reg/D (DFQSM2RA/D))
+
+      Pin                Type      Fanout Load Arrival   
+                                          (fF)   (ps)    
+---------------------------------------------------------
+(clock rclk)      <<<  launch                        0 R 
+                       latency                           
+rptr_empty
+  cb_seqi
+    rempty_reg/CK                                        
+    rempty_reg/Q       DFQSM2RA         2  0.9           
+  cb_seqi/rempty 
+  cb_oseqi/cb_seqi_rempty 
+    g161/NA                                              
+    g161/Z             ND2B1M2R         3  2.8           
+    g160/NA                                              
+    g160/Z             ND2B1M2R         3  2.8           
+    g158/NA                                              
+    g158/Z             ND2B1M2R         3  2.8           
+    g156/NA                                              
+    g156/Z             ND2B1M2R         3  2.8           
+    g152/NA                                              
+    g152/Z             ND2B1M2R         2  2.0           
+    g147/B1                                              
+    g147/Z             MOAI22M2RA       4  5.2           
+    g145/A                                               
+    g145/Z             XOR2M2RA         2  3.0           
+  cb_oseqi/cb_seqi_g14_z 
+  cb_seqi/g14_z 
+    g159/A                                               
+    g159/Z             XOR2M2RA         1  1.2           
+    g155/D                                               
+    g155/Z             NR4M1R           1  1.3           
+    rempty_reg/D  <<<  DFQSM2RA                          
+    rempty_reg/CK      setup                             
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock rclk)           capture                    3333 R 
+                       latency                           
+---------------------------------------------------------
+Cost Group   : 'rclk' (path_group 'rclk')
+Start-point  : rptr_empty/cb_seqi/rempty_reg/CK
+End-point    : rptr_empty/cb_seqi/rempty_reg/D
+
+The global mapper estimates a slack for this path of 1593ps.
+ 
+Cost Group 'wclk' target slack:   196 ps
+Target path end-point (Pin: wptr_full/wfull_reg/D (DFQRM2RA/D))
+
+      Pin               Type       Fanout Load Arrival   
+                                          (fF)   (ps)    
+---------------------------------------------------------
+(clock wclk)     <<<  launch                         0 R 
+                      latency                            
+wptr_full
+  cb_seqi
+    wfull_reg/CK                                         
+    wfull_reg/Q       DFQRM2RA          6  4.7           
+  cb_seqi/wfull 
+  cb_oseqi/cb_seqi_wfull 
+    g154/NA                                              
+    g154/Z            ND2B1M2R          3  2.8           
+    g153/NA                                              
+    g153/Z            ND2B1M2R          3  2.8           
+    g151/NA                                              
+    g151/Z            ND2B1M2R          3  2.8           
+    g149/NA                                              
+    g149/Z            ND2B1M2R          3  2.8           
+    g145/NA                                              
+    g145/Z            ND2B1M2R          2  2.0           
+    g140/B1                                              
+    g140/Z            MOAI22M2RA        3  4.8           
+    g138/A                                               
+    g138/Z            XOR2M2RA          3  3.8           
+  cb_oseqi/cb_seqi_g15_z 
+  cb_seqi/g15_z 
+    g175/A                                               
+    g175/Z            CKND2M2R          1  1.2           
+    g165/B                                               
+    g165/Z            OAI211M2R         1  1.2           
+    g164/D                                               
+    g164/Z            NR4M1R            1  1.3           
+    wfull_reg/D  <<<  DFQRM2RA                           
+    wfull_reg/CK      setup                              
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock wclk)          capture                    10000 R 
+                      latency                            
+                      uncertainty                        
+---------------------------------------------------------
+Cost Group   : 'wclk' (path_group 'wclk')
+Start-point  : wptr_full/cb_seqi/wfull_reg/CK
+End-point    : wptr_full/cb_seqi/wfull_reg/D
+
+The global mapper estimates a slack for this path of 8068ps.
+ 
+ 
+Global incremental timing result
+================================
+        Applying wireload models.
+        Computing net loads.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+      Pin               Type       Fanout Load Slew Delay Arrival   
+                                          (fF) (ps)  (ps)   (ps)    
+--------------------------------------------------------------------
+(clock wclk)          launch                                    0 R 
+                      latency                        +100     100 R 
+wptr_full
+  cb_seqi
+    wfull_reg/CK                                400           100 R 
+    wfull_reg/Q       DFQRM2RA          6  4.7   41  +290     390 F 
+  cb_seqi/wfull 
+  cb_oseqi/cb_seqi_wfull 
+    g154/NA                                            +0     390   
+    g154/Z            ND2B1M2R          3  2.8   54   +91     480 F 
+    g153/NA                                            +0     480   
+    g153/Z            ND2B1M2R          3  2.8   57   +97     577 F 
+    g151/NA                                            +0     577   
+    g151/Z            ND2B1M2R          3  2.8   57   +98     675 F 
+    g149/NA                                            +0     675   
+    g149/Z            ND2B1M2R          3  2.8   57   +98     773 F 
+    g145/NA                                            +0     773   
+    g145/Z            ND2B1M2R          2  2.0   49   +92     865 F 
+    g140/B1                                            +0     865   
+    g140/Z            MOAI22M2RA        3  4.8   89  +137    1002 F 
+    g138/A                                             +0    1002   
+    g138/Z            XOR2M2RA          3  3.8   48  +106    1108 F 
+  cb_oseqi/cb_seqi_g15_z 
+  cb_seqi/g15_z 
+    g175/A                                             +0    1108   
+    g175/Z            CKND2M2R          1  1.2   30   +37    1146 R 
+    g165/B                                             +0    1146   
+    g165/Z            OAI211M2R         1  1.2   56   +47    1193 F 
+    g164/D                                             +0    1193   
+    g164/Z            NR4M1R            1  1.3  119   +84    1277 R 
+    wfull_reg/D  <<<  DFQRM2RA                         +0    1277   
+    wfull_reg/CK      setup                     400    -7    1270 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock wclk)          capture                               10000 R 
+                      latency                        +100   10100 R 
+                      uncertainty                    -200    9900 R 
+--------------------------------------------------------------------
+Cost Group   : 'wclk' (path_group 'wclk')
+Timing slack :    8630ps 
+Start-point  : wptr_full/cb_seqi/wfull_reg/CK
+End-point    : wptr_full/cb_seqi/wfull_reg/D
+
+      Pin                Type      Fanout Load Slew Delay Arrival   
+                                          (fF) (ps)  (ps)   (ps)    
+--------------------------------------------------------------------
+(clock rclk)           launch                                   0 R 
+                       latency                       +100     100 R 
+rptr_empty
+  cb_seqi
+    rempty_reg/CK                               400           100 R 
+    rempty_reg/Q       DFQSM2RA         2  0.9   19  +281     381 F 
+  cb_seqi/rempty 
+  cb_oseqi/cb_seqi_rempty 
+    g161/NA                                            +0     381   
+    g161/Z             ND2B1M2R         3  2.8   54   +81     462 F 
+    g160/NA                                            +0     462   
+    g160/Z             ND2B1M2R         3  2.8   57   +97     559 F 
+    g158/NA                                            +0     559   
+    g158/Z             ND2B1M2R         3  2.8   56   +98     657 F 
+    g156/NA                                            +0     657   
+    g156/Z             ND2B1M2R         3  2.8   58   +98     754 F 
+    g152/NA                                            +0     754   
+    g152/Z             ND2B1M2R         2  2.0   49   +93     847 F 
+    g147/B1                                            +0     847   
+    g147/Z             MOAI22M2RA       4  5.2   94  +140     987 F 
+    g145/A                                             +0     987   
+    g145/Z             XOR2M2RA         2  3.0   50  +122    1109 R 
+  cb_oseqi/cb_seqi_g14_z 
+  cb_seqi/g14_z 
+    g159/A                                             +0    1109   
+    g159/Z             XOR2M2RA         1  1.2   33   +96    1205 F 
+    g155/D                                             +0    1205   
+    g155/Z             NR4M1R           1  1.3  119   +77    1282 R 
+    rempty_reg/D  <<<  DFQSM2RA                        +0    1282   
+    rempty_reg/CK      setup                    400    -3    1279 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock rclk)           capture                               3333 R 
+                       latency                       +100    3433 R 
+--------------------------------------------------------------------
+Cost Group   : 'rclk' (path_group 'rclk')
+Timing slack :    2154ps 
+Start-point  : rptr_empty/cb_seqi/rempty_reg/CK
+End-point    : rptr_empty/cb_seqi/rempty_reg/D
+
+ 
+==================================
+Stage : global_incr_map 
+==================================
+  =================
+   Message Summary
+  =================
+---------------------------------------------------------------------
+|  Id  |Sev  |Count |                 Message Text                  |
+---------------------------------------------------------------------
+| PA-7 |Info |   16 |Resetting power analysis results.              |
+|      |     |      |All computed switching activities are removed. |
+---------------------------------------------------------------------
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_incr                1897        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+          rclk                67     2154              3333 
+          wclk               196     8630             10000 
+
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'fifo'.
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'fifo' using 'medium' effort.
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_iopt                  1897        0         0         0        0
+-------------------------------------------------------------------------------
+ const_prop                 1897        0         0         0        0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_delay                 1897        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+    plc_st_fence         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      plc_laf_st         0  (        0 /        0 )  0.00
+ plc_laf_st_fence         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+ init_drc                   1897        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                   1897        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+
+ init_area                  1897        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         0  (        0 /        0 )  0.00
+         rem_buf         0  (        0 /        0 )  0.00
+         rem_inv         0  (        0 /        0 )  0.00
+        merge_bi         0  (        0 /        0 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+        io_phase         1  (        0 /        0 )  0.01
+       gate_comp         5  (        0 /        0 )  0.08
+       gcomp_mog         0  (        0 /        0 )  0.04
+       glob_area        11  (        0 /       11 )  0.01
+       area_down         0  (        0 /        0 )  0.00
+      size_n_buf         0  (        0 /        0 )  0.02
+  gate_deco_area         0  (        0 /        0 )  0.00
+         rem_buf         0  (        0 /        0 )  0.00
+         rem_inv         0  (        0 /        0 )  0.00
+        merge_bi         0  (        0 /        0 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_delay                 1897        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+    plc_st_fence         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      plc_laf_st         0  (        0 /        0 )  0.00
+ plc_laf_st_fence         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+ init_drc                   1897        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_area                  1897        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         0  (        0 /        0 )  0.00
+         rem_buf         0  (        0 /        0 )  0.00
+         rem_inv         0  (        0 /        0 )  0.00
+        merge_bi         0  (        0 /        0 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+        io_phase         1  (        0 /        0 )  0.00
+       gate_comp         5  (        0 /        0 )  0.03
+       gcomp_mog         0  (        0 /        0 )  0.02
+       glob_area        11  (        0 /       11 )  0.00
+       area_down         0  (        0 /        0 )  0.00
+      size_n_buf         0  (        0 /        0 )  0.01
+  gate_deco_area         0  (        0 /        0 )  0.00
+
+==================================
+Stage : incr_opt 
+==================================
+  =================
+   Message Summary
+  =================
+------------------------------------------------------------------------
+|   Id    |Sev  |Count |                 Message Text                  |
+------------------------------------------------------------------------
+| PA-7    |Info |    2 |Resetting power analysis results.              |
+|         |     |      |All computed switching activities are removed. |
+| SYNTH-5 |Info |    1 |Done mapping.                                  |
+| SYNTH-7 |Info |    1 |Incrementally optimizing.                      |
+------------------------------------------------------------------------
+Info    : Done incrementally optimizing. [SYNTH-8]
+        : Done incrementally optimizing 'fifo'.
+        Applying wireload models.
+        Computing net loads.
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -setuphold has changed from split to merge_always. Specify '-setuphold split' to preserve the behavior of the previous release.
+        : Specify the option explicitly.
+Warning : Default value for an option has changed in this release. [WSDF-104]
+        : Default value for -recrem has changed from split to merge_always. Specify '-recrem split' to preserve the behavior of the previous release.
+Warning : Timing problems have been detected in this design. [TIM-11]
+        : The design is 'fifo'.
+        : Use 'check_timing_intent' or 'report timing -lint' to report more information.
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Info   : ACTP-0001 [ACTPInfo] Activity propagation started for stim#0 netlist
+       : fifo
+Info   : ACTP-0009 [ACTPInfo] Activity Propagation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
+Info   : ACTP-0001 Activity propagation ended for stim#0
+Info   : PWRA-0001 [PwrInfo] compute_power effective options 
+       : -mode : vectorless
+       : -skip_propagation : 1
+       : -frequency_scaling_factor : 1.0
+       : -use_clock_freq : stim
+       : -compat : voltus
+       : -stim :/stim#0
+       : -fromGenus : 1
+Info   : ACTP-0001 Timing initialization started
+Info   : ACTP-0001 Timing initialization ended
+Info   : PWRA-0002 [PwrInfo] Skipping activity propagation due to -skip_ap
+       : option....
+Warning: PWRA-0302 [PwrWarn] Frequency scaling is not applicable for vectorless
+       : flow. Ignoring frequency scaling.
+Info   : PWRA-0002 Voltus compat mode is set for power analysis.
+Warning: PWRA-0304 [PwrWarn] -stim option is not applicable with vectorless mode
+       : of power analysis, ignored this option.
+Info   : PWRA-0002 Started 'vectorless' power computation.
+Info   : PWRA-0009 [PwrInfo] Power Computation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
+Info   : PWRA-0002 Finished power computation.
+Info   : PWRA-0007 [PwrInfo] Completed successfully.
+       : Info=9, Warn=2, Error=0, Fatal=0
+Output file: fifo_synthesis_report_power.rep
+
+
+ No LEF file read in.
+Normal exit.
