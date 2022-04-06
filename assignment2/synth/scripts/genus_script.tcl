@@ -26,8 +26,11 @@ check_design -unresolved
 #write_hdl -mapped > ../netlist/${basename}_gen.v
 #syn_opt
 #write_hdl -mapped > ../netlist/${basename}_post_opt.v
-synthesize -to_mapped
-write_hdl -mapped > ../netlist/${basename}_mapped.v
+set_attr syn_global_effort high
+syn_gen
+syn_map
+syn_opt
+write_hdl > ../netlist/${basename}_opt.v
 write_sdc > ../sdc/${basename}_output.sdc
 write_sdf > ../sdf/${basename}.sdf
 #----------------------------------
