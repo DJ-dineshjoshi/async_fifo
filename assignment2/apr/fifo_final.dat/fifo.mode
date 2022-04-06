@@ -1,0 +1,150 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -skew true }
+catch { setAnalysisMode -usefulSkew true }
+catch { setAnalysisMode -virtualIPO false }
+catch { setOptMode -activeHoldViews { best_case } }
+catch { setOptMode -activeSetupViews { worst_case } }
+catch { setOptMode -autoHoldViews { best_case } }
+catch { setOptMode -autoSetupViews { worst_case} }
+catch { setOptMode -deleteInst true }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixCap true }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -fixFanoutLoad false }
+catch { setOptMode -fixTran true }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -preserveAllSequential false }
+catch { setOptMode -setupTargetSlack 0 }
+setExtractRCMode  -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3
+catch { setCTSMode -moveGateLimit 25 }
+catch {setNanoRouteMode -quiet -drouteAntennaFactor 1.000000}
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "false"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -drouteUseLefPinTaperRule true}
+catch {setNanoRouteMode -quiet -drouteUseMinSpacingForBlockage auto}
+catch {setNanoRouteMode -quiet -extractRcModelFile "${::IMEX::libVar}/misc/rc_model.bin"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpCurrentTimingReport "/tmp/innovus_temp_26487_bessel1_jvl202215_nuifAY/nanoroute_tmp_Go58pS/.timing_report1.d"}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 40.400000}
+catch {setNanoRouteMode -quiet -routeExpPreserveConstraints true}
+catch {setNanoRouteMode -quiet -routeSiEffort "high"}
+catch {setNanoRouteMode -quiet -routeStrictlyHonorNonDefaultRule "false"}
+catch {setNanoRouteMode -quiet -routeWithSiDriven true}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setPlaceMode -modulePlan true }
+catch { setPlaceMode -place_design_floorplan_mode false }
+catch { setPlaceMode -place_detail_check_route false }
+catch { setPlaceMode -place_detail_preserve_routing false }
+catch { setPlaceMode -place_detail_remove_affected_routing false }
+catch { setPlaceMode -place_detail_swap_eeq_cells false }
+catch { setPlaceMode -place_global_clock_gate_aware true }
+catch { setPlaceMode -place_global_cong_effort auto }
+catch { setPlaceMode -place_global_ignore_scan true }
+catch { setPlaceMode -place_global_ignore_spare false }
+catch { setPlaceMode -place_global_module_aware_spare false }
+catch { setPlaceMode -place_global_place_io_pins false }
+catch { setPlaceMode -place_global_reorder_scan false }
+catch { setPlaceMode -powerDriven false }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setVerifyGeometryMode -antenna false }
+catch { setVerifyGeometryMode -area {0 0 0 0} }
+catch { setVerifyGeometryMode -diffCellViol true }
+catch { setVerifyGeometryMode -error 1000 }
+catch { setVerifyGeometryMode -implantCheck true }
+catch { setVerifyGeometryMode -insuffMetalOverlap true }
+catch { setVerifyGeometryMode -maxNonPrefLength -1 }
+catch { setVerifyGeometryMode -maxWidth true }
+catch { setVerifyGeometryMode -mergedMGridCheck true }
+catch { setVerifyGeometryMode -minArea true }
+catch { setVerifyGeometryMode -minHole true }
+catch { setVerifyGeometryMode -minimumCut true }
+catch { setVerifyGeometryMode -minSpacing true }
+catch { setVerifyGeometryMode -minStep true }
+catch { setVerifyGeometryMode -minWidth true }
+catch { setVerifyGeometryMode -offMGrid true }
+catch { setVerifyGeometryMode -offRGrid false }
+catch { setVerifyGeometryMode -overlap true }
+catch { setVerifyGeometryMode -padFillerCellsOverlap true }
+catch { setVerifyGeometryMode -pinInBlkg false }
+catch { setVerifyGeometryMode -regRoutingOnly false }
+catch { setVerifyGeometryMode -routingBlkgPinOverlap true }
+catch { setVerifyGeometryMode -routingCellBlkgOverlap true }
+catch { setVerifyGeometryMode -sameCellViol false }
+catch { setVerifyGeometryMode -sameNet true }
+catch { setVerifyGeometryMode -short true }
+catch { setVerifyGeometryMode -stackedViasOnRegNet false }
+catch { setVerifyGeometryMode -useNonDefaultSpacing false }
+catch { setVerifyGeometryMode -viaEnclosure true }
+catch { setVerifyGeometryMode -wireExt true }
+catch { setUsefulSkewMode -ecoRoute false }
+catch { setUsefulSkewMode -maxAllowedDelay 1 }
+catch { setUsefulSkewMode -maxSkew false }
+catch { setUsefulSkewMode -noBoundary false }
+catch { setUsefulSkewMode -useCells {BUFM10R BUFM12R BUFM14R BUFM16R BUFM18R BUFM20R BUFM22RA BUFM24R BUFM26RA BUFM2R BUFM32RA BUFM3R BUFM40RA BUFM48RA BUFM4R BUFM5R BUFM6R BUFM8R CKBUFM12R CKBUFM16R CKBUFM1R CKBUFM20R CKBUFM22RA CKBUFM24R CKBUFM26RA CKBUFM2R CKBUFM32R CKBUFM3R CKBUFM40R CKBUFM48R CKBUFM4R CKBUFM6R CKBUFM8R DEL1M1R DEL1M4R DEL2M1R DEL2M4R DEL3M1R DEL3M4R DEL4M1R DEL4M4R CKINVM12R CKINVM16R CKINVM1R CKINVM20R CKINVM22RA CKINVM24R CKINVM26RA CKINVM2R CKINVM32R CKINVM3R CKINVM40R CKINVM48R CKINVM4R CKINVM6R CKINVM8R INVM10R INVM12R INVM14R INVM16R INVM18R INVM1R INVM20R INVM22RA INVM24R INVM26RA INVM2R INVM32R INVM3R INVM40R INVM48R INVM4R INVM5R INVM6R INVM8R} }
+catch { set_verify_drc_mode -area {0 0 0 0} }
+catch { set_verify_drc_mode -check_implant true }
+catch { set_verify_drc_mode -check_implant_across_rows false }
+catch { set_verify_drc_mode -check_ndr_spacing false }
+catch { set_verify_drc_mode -check_same_via_cell false }
+catch { set_verify_drc_mode -disable_rules "" }
+catch { set_verify_drc_mode -exclude_pg_net false }
+catch { set_verify_drc_mode -ignore_trial_route false }
+catch { set_verify_drc_mode -limit 1000 }
+catch { set_verify_drc_mode -report ${::IMEX::libVar}/misc/fifo.drc.rpt }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_copyNetPropToNewNet true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware true }
+catch { setPinAssignMode -pinEditInBatch false }
+catch { setTrialRouteMode -handlePreroute true }
+catch { setTrialRouteMode -keepMarkedOptRoutes true }
+catch { setAddRingMode -avoid_short false }
+catch { setAddRingMode -extend_over_row false }
+catch { setAddRingMode -ignore_rows false }
+catch { setAddRingMode -orthogonal_only true }
+catch { setAddRingMode -ring_target default }
+catch { setAddRingMode -skip_crossing_trunks none }
+catch { setAddRingMode -skip_via_on_pin standardcell }
+catch { setAddRingMode -skip_via_on_wire_shape noshape }
+catch { setAddRingMode -stacked_via_bottom_layer ME1 }
+catch { setAddRingMode -stacked_via_top_layer AL_RDL }
+catch { setAddRingMode -via_using_exact_crossover_size true }
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setAddStripeMode -allow_jog {padcore_ring  block_ring} }
+catch { setAddStripeMode -break_at none }
+catch { setAddStripeMode -extend_to_closest_target none }
+catch { setAddStripeMode -ignore_block_check false }
+catch { setAddStripeMode -ignore_nondefault_domains false }
+catch { setAddStripeMode -orthogonal_only true }
+catch { setAddStripeMode -partial_set_thru_domain false }
+catch { setAddStripeMode -route_over_rows_only false }
+catch { setAddStripeMode -rows_without_stripes_only false }
+catch { setAddStripeMode -spacing_from_block 0 }
+catch { setAddStripeMode -spacing_type edge_to_edge }
+catch { setAddStripeMode -split_vias false }
+catch { setAddStripeMode -stacked_via_bottom_layer ME1 }
+catch { setAddStripeMode -stacked_via_top_layer AL_RDL }
+catch { setAddStripeMode -stop_at_last_wire_for_area false }
+catch { setAddStripeMode -stripe_min_length 0 }
+catch { setAddStripeMode -trim_antenna_back_to_shape none }
+catch { setAddStripeMode -via_using_exact_crossover_size false }
+catch { setRouteMode -earlyGlobalHonorMsvRouteConstraint false }
+catch { setRouteMode -earlyGlobalRoutePartitionPinGuide true }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setEndCapMode -boundary_tap false }
