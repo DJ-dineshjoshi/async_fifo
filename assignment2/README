@@ -1,0 +1,10 @@
+This directory consists of physical design of async fifo with below specifications:
+a. read clock: 10MHz
+b. write clock: 30MHz
+
+The various files/folders are as follows:
+a. Makefile: makefile for synthesis
+b. jvl202215_assignment2_elp736.pdf: PDF report indicating all the steps involved in the physical design of the Async FIFO.
+c. rtl: Folder consisting of the verilog HDL files.
+d. synth: Synthesis database consisting of sdc, lib, lef, scripts etc used for synthesis and physical design.
+e. apr: APR data specifically consisting of APR and timingreports.
