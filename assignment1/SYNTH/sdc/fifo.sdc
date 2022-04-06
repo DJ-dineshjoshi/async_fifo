@@ -11,8 +11,8 @@ current_design fifo
 #----------------------------------
 
 # Clock declaration ---------------
-create_clock -name "wclk" -period 10.0 -waveform {0.0 5.0} [get_ports wclk]
-create_clock -name "rclk" -period 3.333 -waveform {0.0 1.6665} [get_ports rclk]
+create_clock -name "wclk" -period 100.0 -waveform {0.0 50.0} [get_ports wclk]
+create_clock -name "rclk" -period 33.33 -waveform {0.0 16.665} [get_ports rclk]
 set_clock_groups -asynchronous -group "wclk" -group "rclk"
 #----------------------------------
  
